@@ -65,12 +65,10 @@ services:
     volumes:
       - ./uploads:/app/uploads
       - .:/app
+      - /app/node_modules
     links:
       - mongodb
 # Networks to be created to facilitate communication between containers
-# volumes:
-  # mongodb-data:
-  #   name: mongodb-data
 networks:
   mongodb_network:
     name: mongodb_network
