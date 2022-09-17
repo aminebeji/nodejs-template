@@ -15,7 +15,7 @@ server.use(Logger);
 server.use("/api/v1", [ AuthRouter]);
 
 server.listen(PORT, () => {
-  console.log(`server running ${PORT}`);
+  console.log(`server running on PORT =  ${PORT}`);
   Routes(server);
 });
 module.exports = server;
