@@ -14,7 +14,7 @@ server.use(cookieParser());
 server.use(Logger);
 server.use("/api/v1", [ AuthRouter]);
 
-listenner.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`server running ${PORT}`);
   Routes(server);
 });
